@@ -1,5 +1,6 @@
 #include <iostream>
 #include <algorithm>
+#include <numeric>
 
 using namespace std;
 
@@ -10,7 +11,7 @@ int machu_pichu(int matriz[20][20], int linha, int coluna, int l, int c) {
     }
 
     if (l < 0 || l > linha - 1 || c < 0 || c > coluna - 1) {
-        return 0;
+        return 2000000;
     }
 
     matriz[l][c] = 9;
@@ -35,7 +36,7 @@ int main() {
         }
     }
 
-    cout << machu_pichu(matriz_g, linha, coluna, linha, coluna) << endl;
+    cout << machu_pichu(matriz_g, linha, coluna, linha - 1, 0) << endl;
 
-  return 0;
+    return 0;
 }
