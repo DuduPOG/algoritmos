@@ -1,2 +1,2 @@
-# algoritmos
-atividades de algoritmos 
+# Algoritmos
+- Atividades de algoritmos 
